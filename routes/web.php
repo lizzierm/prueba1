@@ -16,3 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/nuevodoc', function(){
+   return 'nuevos documentos'; 
+});
+
+Route::get('/lista', function () {
+    return [
+        'Cursos' => [
+            'Curso de Laravel 9',
+            'Curso de programación orientada a objetos',
+            'Curso de Git',
+        ]
+    ];
+});
